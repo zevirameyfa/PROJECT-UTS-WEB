@@ -3,3 +3,5 @@ Saya mengangkat tema jual beli dengan mengambil referensi dari sebuah café di d
 
 LINK YOUTUBE 
 https://youtu.be/u-qHdndM2t0
+
+Untuk Screenshot tampilan web saya sudah taruh dalam bentuk file PDF yang sudah saya lampirkan
