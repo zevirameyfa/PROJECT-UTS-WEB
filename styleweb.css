@@ -1,0 +1,476 @@
+/* Dasar tampilan website */
+:root {
+    --primary-color: #c05621;
+    --secondary-color: #ed8836;
+    --accent-color: #dd6b20;
+    --text-color: #5c4c3a;
+    --light-bg: #fffaf0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: var(--light-bg);
+    color: var(--text-color);
+    min-width: auto;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* Header */
+header.latar-gradient {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%) !important;
+    border-bottom: 3px solid var(--secondary-color);
+}
+
+.bagian-logo h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.bagian-logo span {
+    font-size: 0.9rem;
+    color: #f7e9d7;
+}
+
+.info-kontak p {
+    color: #f7e9d7;
+}
+
+.info-kontak i {
+    color: #ffed4a;
+}
+
+/* Navigation */
+.navbar {
+    background: var(--primary-color) !important;
+    border-bottom: 2px solid #b14c1a;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff !important;
+    padding: 0.75rem 1.5rem !important;
+    border-radius: 25px;
+    margin: 0 0.3rem;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffed4a !important;
+}
+
+.navbar-nav .nav-link.active {
+    background: linear-gradient(135deg, var(--secondary-color) 0%, #f6ad55 100%) !important;
+    color: #ffffff !important;
+}
+
+.navbar-toggler {
+    border: none;
+    padding: 0.25rem 0.5rem;
+}
+
+.badge-email .badge {
+    background: rgba(255, 255, 255, 0.15) !important;
+    border: 1px solid rgba(255, 255, 255, 0.571);
+    color: #ffffff !important;
+}
+
+/* Hero */
+.bagian-hero {
+    background: linear-gradient(rgba(192, 86, 33, 0.068), rgba(23, 16, 17, 0.612)), 
+                url('https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    position: relative;
+}
+
+.bagian-hero .display-1 {
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+
+.h3 {
+    font-size: 3.5rem !important;
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: #ffed4a;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+}
+
+.teks-hero {
+    font-size: 1.2rem;
+    color: #f7e9d7;
+}
+
+/* keterangan */
+.bagian-tentang-kami {
+    margin: 3rem 0 4rem;
+    border-top: none !important;
+    padding-top: 1rem !important;
+}
+
+.bagian-tentang-kami p {
+    color: #7c6b57;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.bagian-tentang-kami {
+    width: 100%;
+    text-align: center;
+}
+
+.bagian-tentang-kami .row {
+    justify-content: center;
+}
+
+/* 3 keunggulan */
+.kartu-keunggulan {
+    background: white;
+    border-radius: 12px;
+    border: 2px solid var(--secondary-color);
+    transition: all 0.3s ease;
+    height: 100%;
+    padding: 1.5rem 1rem !important;
+    box-shadow: 0 5px 15px rgba(192, 86, 33, 0.1);
+    margin: 0 auto;
+    max-width: 300px;
+}
+
+.kartu-keunggulan:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(192, 86, 33, 0.2);
+}
+
+.kartu-keunggulan i {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.kartu-keunggulan span {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+/* Jam Buka */
+.bagian-jam-buka {
+    margin: 4rem 0;
+    padding-top: 3rem;
+    border-top: 2px solid var(--secondary-color);
+}
+
+.kartu-jam-buka {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    border: 3px solid var(--secondary-color);
+    border-radius: 20px;
+    padding: 3rem 2rem;
+    box-shadow: 0 10px 30px rgba(192, 86, 33, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.kartu-jam-buka::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(135deg, var(--secondary-color) 0%, var(--accent-color) 100%);
+}
+
+.info-hari-buka {
+    padding: 2rem 1.5rem;
+    background: white;
+    border-radius: 15px;
+    border: 2px solid #e9ecef;
+}
+
+.nama-hari {
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.waktu-buka {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--text-color);
+    margin-bottom: 0;
+}
+
+/* Gallery*/
+.bagian-galeri-foto {
+    margin: 4rem 0;
+    padding-top: 3rem;
+    border-top: 2px solid var(--secondary-color);
+}
+
+.foto-galeri {
+    border: 3px solid var(--secondary-color);
+    border-radius: 12px;
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    box-shadow: 0 5px 15px rgba(192, 86, 33, 0.1);
+}
+
+/* kunjungi Kami */
+.bagian-kunjungi-kami {
+    margin: 4rem 0;
+    padding-top: 3rem;
+    border-top: 2px solid var(--secondary-color);
+}
+
+.kartu-info-alamat {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    border: 3px solid var(--secondary-color);
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(192, 86, 33, 0.1);
+    height: 100%;
+}
+
+.kartu-info-alamat h4 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.kartu-info-alamat h4 i {
+    color: var(--accent-color);
+}
+
+.detail-alamat {
+    font-size: 1.1rem;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.info-tambahan {
+    background: rgba(237, 137, 54, 0.1);
+    padding: 1rem;
+    border-radius: 10px;
+    border-left: 4px solid var(--secondary-color);
+}
+
+.info-tambahan p {
+    margin-bottom: 0.5rem;
+    color: #5c4c3a;
+}
+
+.info-tambahan i {
+    color: var(--secondary-color);
+    width: 20px;
+}
+
+.bingkai-peta {
+    border: 3px solid var(--secondary-color);
+    box-shadow: 0 8px 25px rgba(192, 86, 33, 0.15);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.bingkai-peta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(192, 86, 33, 0.2);
+}
+
+/* judul Menu */
+.judul-menu-utama {
+    color: var(--primary-color);
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+/* Menu */
+.bagian-kategori-menu {
+    margin-bottom: 4rem !important;
+}
+
+.judul-kategori-menu {
+    color: var(--primary-color);
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--secondary-color);
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 1px;
+    text-align: left;
+}
+
+.judul-kategori-menu i {
+    color: var(--accent-color);
+    font-size: 1.8rem;
+}
+
+.kartu-item-menu {
+    background: white;
+    border: 2px solid var(--secondary-color);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    height: 100%;
+    box-shadow: 0 6px 20px rgba(192, 86, 33, 0.1);
+}
+.kartu-item-menu:hover {
+    transform: translateY(-8px);
+    border-color: var(--accent-color);
+    box-shadow: 0 12px 30px rgba(192, 86, 33, 0.2);
+}
+.gambar-item-menu {
+    height: 240px;
+    overflow: hidden;
+    position: relative;
+}
+.gambar-item-menu img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+.kartu-item-menu:hover .gambar-item-menu img {
+    transform: scale(1.1);
+}
+.konten-item-menu {
+    padding: 1.5rem;
+}
+.nama-item-menu {
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+}
+.deskripsi-item-menu {
+    color: #7c6b57;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 1.2rem;
+    font-style: italic;
+}
+.harga-item-menu {
+    color: var(--accent-color);
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+/* Reservasi kotak */
+.kartu-form-pemesanan {
+    border: 2px solid var(--secondary-color) !important;
+    border-radius: 15px !important;
+    box-shadow: 0 8px 25px rgba(192, 86, 33, 0.1);
+}
+
+/* Form Styles */
+.form-label {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+}
+
+.form-label i {
+    margin-right: 0.5rem;
+}
+
+.form-control,
+.form-select {
+    padding: 0.9rem 1rem;
+    border: 2px solid #e2e8f0;
+    border-radius: 10px;
+    background: #f7fafc;
+    color: var(--text-color);
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus,
+.form-select:focus {
+    outline: none;
+    border-color: var(--secondary-color);
+    background: white;
+    box-shadow: 0 0 0 0.2rem rgba(237, 137, 54, 0.15);
+}
+
+/* tombol reservasi */
+.btn-primary {
+    background: linear-gradient(135deg, var(--secondary-color) 0%, var(--accent-color) 100%);
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(237, 137, 54, 0.4);
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, var(--accent-color) 0%, var(--primary-color) 100%);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(237, 137, 54, 0.6);
+}
+.tab-content {
+    display: none;
+}
+.tab-content.active {
+    display: block;
+}
+
+/* Footer bawah sendiri */
+footer.bg-dark {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%) !important;
+    border-top: 3px solid var(--secondary-color);
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #ffffff;
+}
+
+/* icon ig fb x */
+.tautan-sosial a {
+    color: #ffffff !important;
+    font-size: 1.3rem;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+.tautan-sosial a:hover {
+    color: #ffffff !important;
+    transform: none;
+    background: none;
+    border: none;
+}
+
+/* Responsive untuk penyesuaian device */
+@media (max-width: 768px) {
+    .navbar-toggler {
+        display: block !important;
+    }
+    
+    .bagian-logo h1 {
+        font-size: 2rem;
+    }
+    
+    .bagian-hero .display-1 {
+        font-size: 3rem;
+    }
+    
+    .h3 {
+        font-size: 1.5rem !important;
+    }
+    
+    .judul-bagian {
+        font-size: 2rem;
+    }
+    
+    .kartu-keunggulan {
+        margin-bottom: 1rem;
+    }
+}

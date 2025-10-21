@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TERA - Caffe & Billiard</title>
+    <!-- bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styleweb.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header class="latar-gradient">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center py-3 flex-wrap">
+                <div class="bagian-logo">
+                    <h1 class="text-white fw-bold mb-1">TERA</h1>
+                    <span class="text-light">Jl. Jaksa Agung Suprapto, Dusun Bulukerto, Kec. Magetan, Kabupaten Magetan, Jawa Timur 63315</span>
+                </div>
+                <div class="info-kontak text-white">
+                    <p class="mb-0"><i class="fas fa-phone me-2"></i> +62-818-0345-5316</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- navigation -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <div class="d-flex justify-content-between w-100 align-items-center">
+                <div class="badge-email">
+                    <span class="badge bg-light text-dark p-2">
+                        <i class="fas fa-envelope me-2"></i> contact@tera-caffe.com
+                    </span>
+                </div>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#" data-tab="home">Beranda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-tab="menu">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-tab="reservation">Reservasi</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Halaman Beranda -->
+        <div id="home-content" class="tab-content active">
+            <!-- Hero Section -->
+            <section class="bagian-hero position-relative">
+                <div class="container-fluid position-absolute top-50 start-50 translate-middle text-center text-white">
+                    <h1 class="display-1 fw-bold mb-3">TERA</h1>
+                    <h2 class="h3 mb-4">Caffe & Billiard</h2>
+                    <p class="teks-hero mb-0">Tempat nyaman untuk menikmati kopi berkualitas dan pengalaman bermain billiard yang tak terlupakan</p>
+                </div>
+            </section>
+
+            <div class="container my-5">
+                <!-- penjelasan tera -->
+                <section class="bagian-tentang-kami mb-5">
+                    <div class="row align-items-center">
+                        <div class="col-12">
+                            <div class="text-center mb-5">
+                                <p class="mb-4">TERA Caffe & Billiard adalah tempat nongkrong cozy buat kamu yang suka ngopi sambil seru-seruan main billiard. Berdiri sejak 2025, TERA hadir buat ngasih vibe santai tapi tetap asik di mana rasa kopi yang nikmat ketemu sama suasana seru bareng teman. Setiap kunjungan dijamin jadi pengalaman yang berkesan.</p>
+                                
+                                <p class="mb-4">Dengan desain interior yang dibuat khusus buat kenyamanan maksimal, TERA jadi tempat yang pas buat segala momen — mulai dari meeting santai yang tetap produktif, nongkrong bareng teman, sampai ngerayain momen spesial bareng keluarga.</p>
+                                
+                                <p class="mb-5">Setiap makanan dan minuman di TERA dibuat dari bahan-bahan pilihan terbaik oleh barista dan chef yang ahli di bidangnya. Buat yang suka main billiard, area kami juga dilengkapi meja berkualitas biar pengalaman main kamu makin seru dan nyaman.</p>
+                            </div>
+                            
+                            <!-- 3 Keunggulan -->
+                            <div class="row text-center">
+                                <div class="col-md-4 mb-4">
+                                    <div class="kartu-keunggulan p-4">
+                                        <i class="fas fa-coffee fa-3x mb-3"></i>
+                                        <h5>Kopi Premium</h5>
+                                        <p class="mb-0">Racikan kopi spesial dari biji pilihan dengan teknik penyeduhan terbaik</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-4">
+                                    <div class="kartu-keunggulan p-4">
+                                        <i class="fas fa-8-ball fa-3x mb-3"></i>
+                                        <h5>Billiard Asik</h5>
+                                        <p class="mb-0">Meja billiard dengan perawatan berkala</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-4">
+                                    <div class="kartu-keunggulan p-4">
+                                        <i class="fas fa-users fa-3x mb-3"></i>
+                                        <h5> Suasana</h5>
+                                        <p class="mb-0">Suasana modern dan nyaman untuk berbagai kesempatan</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Jam Operasional Section -->
+                <section class="bagian-jam-buka mb-5">
+                    <h2 class="text-center mb-4 judul-bagian">Jam Operasional</h2>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="kartu-jam-buka">
+                                <div class="row text-center">
+                                    <div class="col-md-6 mb-4">
+                                        <div class="info-hari-buka">
+                                            <h4 class="nama-hari">Senin - Kamis</h4>
+                                            <p class="waktu-buka">10:00 - 23:00 WIB</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-4">
+                                        <div class="info-hari-buka">
+                                            <h4 class="nama-hari">Jumat - Minggu</h4>
+                                            <p class="waktu-buka">10:00 - 00:00 WIB</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- foto tera  -->
+                <section class="bagian-galeri-foto mb-5">
+                    <h2 class="text-center mb-4 judul-bagian">Vibe Corner TERA</h2>
+                    <div class="row g-3">
+                        <div class="col-md-3 col-6">
+                            <img src="foto1.jpg" alt="Interior" class="img-fluid foto-galeri rounded">
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <img src="foto2.jpg" alt="outdoor1" class="img-fluid foto-galeri rounded">
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <img src="foto3.jpg" alt="kasir" class="img-fluid foto-galeri rounded">
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <img src="foto4.jpg" alt="outdoor2" class="img-fluid foto-galeri rounded">
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <img src="foto5.jpg" alt="indoor1" class="img-fluid foto-galeri rounded">
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <img src="foto6.jpg" alt="tempat billiard" class="img-fluid foto-galeri rounded">
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <img src="foto7.jpg" alt="indoor2 Bar" class="img-fluid foto-galeri rounded">
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <img src="foto8.jpg" alt="Outdoor3" class="img-fluid foto-galeri rounded">
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Kunjungi Kami -->
+                <section class="bagian-kunjungi-kami">
+                    <h2 class="text-center mb-4 judul-bagian">Kunjungi Kami</h2>
+                    <div class="row">
+                        <div class="col-lg-6 mb-4">
+                            <div class="kartu-info-alamat p-4 h-100">
+                                <h4 class="mb-3"><i class="fas fa-map-marker-alt me-2"></i>Lokasi TERA</h4>
+                                <p class="detail-alamat mb-3">
+                                    <strong>Jl. Jaksa Agung Suprapto, Dusun Bulukerto<br>
+                                    Kec. Magetan, Kabupaten Magetan<br>
+                                    Jawa Timur 63315</strong>
+                                </p>
+                                <div class="info-tambahan">
+                                    <p class="mb-2"><i class="fas fa-clock me-2"></i>Buka Setiap Hari</p>
+                                    <p class="mb-2"><i class="fas fa-phone me-2"></i>+62-818-0345-5316</p>
+                                    <p class="mb-0"><i class="fas fa-wifi me-2"></i>Free WiFi Available</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-4">
+                            <div class="bingkai-peta rounded h-100">
+                                <iframe 
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3954.123456789012!2d111.3456789!3d-7.654321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwMzknMTUuNiJTIDExMcKwMjAnNDQuNiJF!5e0!3m2!1sen!2sid!4v1234567890123!5m2!1sen!2sid" 
+                                    width="100%" 
+                                    height="300" 
+                                    style="border:0; border-radius: 10px;" 
+                                    allowfullscreen="" 
+                                    loading="lazy" 
+                                    referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- judul Menu -->
+        <div id="menu-content" class="tab-content">
+            <div class="container my-5">
+                <div class="text-center mb-5">
+                    <h1 class="display-4 judul-menu-utama">Menu Pilihan Kami</h1>
+                </div>
+
+                <!-- Makanan -->
+                <section class="bagian-kategori-menu mb-5">
+                    <h3 class="judul-kategori-menu mb-4"><i class="fas fa-utensils me-3"></i>Makanan</h3>
+                    <div class="row g-4" id="makanan-grid">
+                        <!-- Menu saya tulis di JS untuk camilan dan minuman sama -->
+                    </div>
+                </section>
+
+                <!-- Camilan -->
+                <section class="bagian-kategori-menu mb-5">
+                    <h3 class="judul-kategori-menu mb-4"><i class="fas fa-cookie me-3"></i>Chill Bites</h3>
+                    <div class="row g-4" id="camilan-grid">
+                    </div>
+                </section>
+
+                <!-- Minuman -->
+                <section class="bagian-kategori-menu">
+                    <h3 class="judul-kategori-menu mb-4"><i class="fas fa-glass-cheers me-3"></i>Minuman</h3>
+                    <div class="row g-4" id="minuman-grid">
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- Halaman Reservasi -->
+        <div id="reservation-content" class="tab-content">
+            <div class="container my-5">
+                <div class="text-center mb-5">
+                    <h1 class="display-4 judul-menu-utama">Reservasi Meja Billiard</h1>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card kartu-form-pemesanan">
+                            <div class="card-body p-4">
+                                <form class="form-pemesanan">
+                                     <!-- data pribadi -->
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <div class="mb-3">
+                                                <label for="name" class="form-label">
+                                                    <i class="fas fa-user me-2"></i>Nama Lengkap
+                                                </label>
+                                                <input type="text" class="form-control" id="name" required placeholder="Masukkan nama anda">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="mb-3">
+                                                <label for="phone" class="form-label">
+                                                    <i class="fas fa-phone me-2"></i>Nomor Telepon
+                                                </label>
+                                                <input type="tel" class="form-control" id="phone" required placeholder="+62 812-3456-7890">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <div class="mb-3">
+                                                <label for="table" class="form-label">
+                                                    <i class="fas fa-chess-board me-2"></i>Pilih Meja
+                                                </label>
+                                                <select class="form-select" id="table" required>
+                                                    <option value="">Pilih meja billiard</option>
+                                                    <option value="Meja 1">Meja 1</option>
+                                                    <option value="Meja 2">Meja 2</option>
+                                                    <option value="Meja 3">Meja 3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="mb-3">
+                                                <label for="date" class="form-label">
+                                                    <i class="fas fa-calendar me-2"></i>Tanggal
+                                                </label>
+                                                <input type="date" class="form-control" id="date" required>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <div class="mb-3">
+                                                <label for="time" class="form-label">
+                                                    <i class="fas fa-clock me-2"></i>Waktu Mulai
+                                                </label>
+                                                <input type="text" class="form-control" id="time" required placeholder="Contoh: 14:00 atau 2 Sore">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="mb-3">
+                                                <label for="duration" class="form-label">
+                                                    <i class="fas fa-hourglass me-2"></i>Durasi Bermain
+                                                </label>
+                                                <input type="text" class="form-control" id="duration" required placeholder="Contoh: 2 jam atau 3 jam">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-4">
+                                        <label for="special-requests" class="form-label">
+                                            <i class="fas fa-edit me-2"></i>Permintaan Khusus
+                                        </label>
+                                        <textarea class="form-control" id="special-requests" rows="3" placeholder="Permintaan khusus seperti meja tertentu, makanan/minuman, dll"></textarea>
+                                    </div>
+                                    <!-- tombol kirim -->
+                                    <button type="submit" class="btn btn-primary btn-lg w-100">
+                                        <i class="fas fa-calendar-check me-2"></i>Pesan Meja Billiard Sekarang
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center flex-wrap">
+                <p class="mb-0">&copy; 2024 TERA Caffè & Billiard.</p>
+                <div class="tautan-sosial">
+                    <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-twitter fa-lg"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="web.js"></script>
+</body>
+</html>
